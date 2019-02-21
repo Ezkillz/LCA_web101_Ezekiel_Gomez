@@ -101,3 +101,10 @@ header {background-color: lightblue;
     font-size: 30px;
     text-align: center;
   }
+  
+  #Calculator
+{display: grid;
+grid-template-columns: 25% 25% 25% 25%;
+grid-template-rows: 25% 25% 25% 25%;
+
+}
