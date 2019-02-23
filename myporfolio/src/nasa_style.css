@@ -1,0 +1,6 @@
+main{
+    width: 800;
+    height: 450 ;
+    background-image: cross-fade(20%) url( ) ;
+    text-align: center;
+}
