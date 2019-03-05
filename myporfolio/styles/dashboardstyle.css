@@ -10,6 +10,7 @@ header {background-color: lightblue;
   }
   aside {background-color: lightgreen;
     grid-area: aside;
+
   }
   .banner {background-color: lavender;
     grid-area: banner;
@@ -18,16 +19,16 @@ header {background-color: lightblue;
     color:blue;
     grid-area: footer;
   }
-  .container {
-    display: grid; /* Using the grid */
-    grid-template-areas: /* Notice how I've stacked my areas, just like they look on the page! */
+  /*.container {
+    display: grid; / Using the grid /
+    grid-template-areas: / Notice how I've stacked my areas, just like they look on the page! /
       "header"
       "nav"
       "main"
       "aside"
       "banner"
       "footer";
-  }
+  }*/
   @media (min-width: 500px) {
     .container {
       display: grid;
@@ -51,6 +52,7 @@ header {background-color: lightblue;
         "nav    main    aside"
         "nav    main    banner"
         "footer footer  footer"
+        "cal cal cal"
      }
      nav ul {
        flex-direction: column;
@@ -59,32 +61,7 @@ header {background-color: lightblue;
   .cal_button{
     width: 50px
 }
-  .parent {
-    display: grid;
-    /*Define the width of your columns*/
-    grid-template-columns: 0.8fr 1.2fr 0.8fr 1.2fr;
-    /*
-    you can set the gap for column and row separately
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
-    or just use grid-gap for both
-    */
-    grid-gap: 16px;}
-  
-  .parent div {
-    height: 100px;}
-  
-  .parent div:nth-child(even) {
-    background-color: blue; }
-  
-  .parent div:nth-child(odd) {
-    background-color: red; }
 
-  .parent {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-gap: 16px;
-}
 
 .grid-container {
     display: inline-grid;
@@ -93,18 +70,96 @@ header {background-color: lightblue;
   padding: 10px;
   }
   .grid-item {
-      grid-template-columns: 30px;
-      grid-template-rows: 20px;
+    grid-template-columns: 30px;
+    grid-template-rows: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
     text-align: center;
   }
-  
-  #Calculator
-{display: grid;
-grid-template-columns: 25% 25% 25% 25%;
-grid-template-rows: 25% 25% 25% 25%;
+.calculator {
+border:1px solid black;
+display: flex ;
+flex-flow: row wrap;
+background: darkgray;
+}
+.calculator > *{
+margin: 3px ;
+width: 20% ;
+height: 20px;
+border: 1px solid black; 
+text-align: center; 
+}
+#display {
+  border: 3px solid blue;
+  width: 15vw;
+  margin-left: .5vw;
+  margin-right:.5vw;
+}
+
+.number{
+background: whitesmoke;
+}
+.button{
+background: orange;
+}
+.calculator > *:hover{
+  border: 3px solid red;
+}
+.calculator2{
+  display:grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.calculator2 >*{
+border: 1px solid black;
+margin: 2px;
+}
+
+.parent{
+  grid-area: cal;
+  border: 1px solid black;
+}
+.month{
+text-align: Center;
+border-bottom: 1px solid ;
+}
+.label{
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.label>*{
+  border: 1px solid black;
+  padding: 15px ;
+}
+
+.days{
+  display: flex;
+  flex-flow: row wrap; 
+}
+.days>div{
+  height: 50px ;
+  width: 13.5vw ;
+  text-align: top left ;
+  border: 1px solid black;
+}
+
+.days>span{
+  background: blue;
+  width: 13.5vw ;
+  text-align: center;
+  border: 1px solid black;
+}
+.days div:nth-child(even) {
+  background-color: lightblue; }
+
+.days div:nth-child(odd) {
+  background-color: lightgreen; }
+
+.bday:hover{
+border: 1px dotted gold;
 
 }
