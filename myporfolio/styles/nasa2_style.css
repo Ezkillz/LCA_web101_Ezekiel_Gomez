@@ -1,5 +1,6 @@
 body{
     margin: 0 auto;
+    
 }
 main{
     margin: 0 auto;
@@ -20,5 +21,4 @@ article{
     width: 270px;
     height: 324px;
     background: lightslategrey;
-
 }
