@@ -1,26 +1,24 @@
-main{
-    margin: 0 auto;
-    width: 850px ;
-    height: 450px ;
-    background-image: url(../images/cosmic_IMG.jpg) ;
-    text-align: center;
-}
 body{
     margin: 0 auto;
-    display: inline-block;
-   
+}
+main{
+    margin: 0 auto;
+    background-image: url(../images/cosmic_IMG.jpg) ;
+    width: 850px;
+    height: 450px;
+    text-align: center;
 }
 section{
-    display: flex;
+    justify-content: center;
     height: 324px;
-    justify-content: center ;
+    display: flex;
+    
 }
 article{
+    margin: 2px 20px;
     text-align: center;
     width: 270px;
     height: 324px;
-    background: lightslategrey ;
-    justify-content: 
-    
+    background: lightslategrey;
 
 }
