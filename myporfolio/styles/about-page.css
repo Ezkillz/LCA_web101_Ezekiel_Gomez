@@ -15,17 +15,14 @@ header{
 .container { display: grid;
     grid-template-columns: 1fr 3fr 2fr;
     grid-auto-rows: minmax(100px auto);
-
+    grid-template-areas: 
+    ".he    .he     .he"
+    ".na    .ma     .fo"
 }
 
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: minmax(100px auto);
-    grid-template-areas: 
-    "header header  header"
-    "nav    main    aside"
-    "form   table   div"
-    "footer footer  footer"
+    
 
 }
