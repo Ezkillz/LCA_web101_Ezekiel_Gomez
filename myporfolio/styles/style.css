@@ -74,7 +74,20 @@ body {
     color:white;
     grid-column: 2/3;
     margin: 3% auto;
-    border-bottom: 2px solid #1940A9;;
+    border-bottom: 2px solid #1940A9;
+    animation: scribble 5s ease-in 10s;
+  }
+  @keyframes scribble{
+    10%{font-size: xx-small}
+    20%{font-size: x-small}
+    30%{font-size: smaller}
+    40%{font-size: small}
+    50%{font-size: medium}
+    60%{font-size:large}
+    70%{font-size:larger}
+    80%{font-size: x-large }
+    90%{font-size: xx-large}
+    100%{font-size: inherit}
   }
   
   h2 {
