@@ -44,6 +44,16 @@ body {
     border: 2px solid #000000;
     background: none;
     padding: 20px; 
+    animation: bounce 10s ease-in-out 2s ;
+  }
+  @keyframes bounce{
+    10% {background: grey;   color: white;         text-align: left;    font-size: smaller}
+    20% {background:red;     color: whitesmoke;    text-align:right;    font-size: x-small }
+    30% {background:orange;  color: grey;          text-align:unset;    font-size: large}
+    40% {background:yellow;  color: darkslategrey; text-align:end;      font-size: medium}
+    50% {background: green;  color: darkblue;      text-align: inherit; font-size: unset } 
+    75% {background: blue;   color: maroon;        text-align: initial; font-size: xx-large}
+    100%{background: purple; color: blue;          text-align: center;  font-size: inherit}
   }
   
   nav {
