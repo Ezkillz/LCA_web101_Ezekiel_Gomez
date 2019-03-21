@@ -44,6 +44,16 @@ body {
     border: 2px solid #000000;
     background: none;
     padding: 20px; 
+    animation: bounce 10s ease-in-out 2s ;
+  }
+  @keyframes bounce{
+    10% {background: grey;   color: white;         text-align: left;    font-size: smaller}
+    20% {background:red;     color: whitesmoke;    text-align:right;    font-size: x-small }
+    30% {background:orange;  color: grey;          text-align:unset;    font-size: large}
+    40% {background:yellow;  color: darkslategrey; text-align:end;      font-size: medium}
+    50% {background: green;  color: darkblue;      text-align: inherit; font-size: unset } 
+    75% {background: blue;   color: maroon;        text-align: initial; font-size: xx-large}
+    100%{background: purple; color: blue;          text-align: center;  font-size: inherit}
   }
   
   nav {
@@ -64,7 +74,20 @@ body {
     color:white;
     grid-column: 2/3;
     margin: 3% auto;
-    border-bottom: 2px solid #1940A9;;
+    border-bottom: 2px solid #1940A9;
+    animation: scribble 5s ease-in 10s;
+  }
+  @keyframes scribble{
+    10%{font-size: xx-small;}
+    20%{font-size: x-small;}
+    30%{font-size: smaller;}
+    40%{font-size: small;}
+    50%{font-size: medium;}
+    60%{font-size:large;}
+    70%{font-size:larger;}
+    80%{font-size: x-large;}
+    90%{font-size: xx-large;}
+    100%{font-size: inherit;}
   }
   
   h2 {
