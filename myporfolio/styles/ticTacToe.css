@@ -8,16 +8,14 @@ body{
 h1{
     text-align: center;
 }
-div{
+.board>*{
     width: 200px;
     height: 200px;
     border: darkblue solid 1px;
-   
 }
 .board{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin-left: 2.5vw;
-    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+    width: 607px;
+    height: 607px;
 }

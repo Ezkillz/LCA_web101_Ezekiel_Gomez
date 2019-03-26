@@ -11,3 +11,25 @@
 //
 //.4 Prompt players to decide of they want to play new game.
 //. If yes, then goes back to step 1.
+
+var xturn=true;
+
+function move(className){
+
+
+
+
+    var thisTile=document.getElementsByClassName(className)[0];
+    if(xturn){
+        thisTile.appendChild(document.createTextNode("X"));
+        thisTile.setAttribute("style","text-align:center; font-size: 150px;");
+        xturn=!xturn;
+        console.log(xturn);
+    }
+    else if(!xturn){
+        thisTile.appendChild(document.createTextNode("O"));
+        thisTile.setAttribute("style","text-align:center; font-size: 150px;");
+        xturn=!xturn;
+        console.log(xturn);
+    }
+}
