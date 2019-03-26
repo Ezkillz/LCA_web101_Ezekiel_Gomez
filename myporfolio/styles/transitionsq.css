@@ -1,0 +1,26 @@
+body{
+    border: red solid 2px;
+
+}
+
+.container>*{
+    width: 50px;
+    height: 50px;
+    border: black solid 1px;
+    transition: transform 2s ease-in-out;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container:hover #even{
+    transform: translateX(calc(50vw - 50px)) rotate(720deg) scale(2);
+
+}
+.container:hover #odd{
+    transform: translateX(calc(-50vw + 50px)) rotate(-720deg) scale(0.5);
+}
