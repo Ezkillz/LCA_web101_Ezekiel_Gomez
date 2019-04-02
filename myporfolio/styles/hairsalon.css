@@ -1,0 +1,18 @@
+body{
+    background: 
+}
+.image1{
+    width:400px;
+    height: 250px;
+}
+.header{
+    background:yellowgreen;
+    border: black solid 1px; 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.main{
+
+
+}

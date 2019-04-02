@@ -1,12 +1,25 @@
-var loc= document.getElementById('mylocation');
+(function () {
+    'use strict';
 
-function mylocation(){
-    if(navigator.geolocation){
-        navigator.geolocation.getCurrentPosition(showPosition);
-    }else{
-        loc:innerHTML = "location tracking not possible";
+    function onPositionReceived(position){
+    console.log(position);
     }
-function showPosition(position){
-    loc.innerHTML = "longitude: " + position.coords.longitude + "Latitude: ";
-}
-}
+    if(navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(onPositionReceived, locationNotReceived, {timeout:5});
+    
+} () );
+
+////// just a COPY AND PASTE comparison for now
+//////(var myLocation = document.getElementById("my-coordinates")
+//////
+//////function getLocation() {
+//////  if(navigator.geolocation){
+//////    navigator.geolocation.getCurrentPosition(displayPosition)
+//////  } else {
+//////   myLocation.innerHTML = "Not available"
+//////  }
+//////}
+//////
+//////function displayPosition(position) {
+//////  myLocation.innerHTML = "Longitude: " + position.coords.longitude + " Latitude: " + position.coords.latitude
+//////}

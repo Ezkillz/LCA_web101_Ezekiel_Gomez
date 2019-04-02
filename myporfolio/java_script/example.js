@@ -14,3 +14,4 @@ $(function() {
       let $this = $(this);
       $this.remove();
     });
+  });
