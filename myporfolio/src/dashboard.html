@@ -13,15 +13,27 @@
     <div class="container">
         <header>header</header>
         <nav>
-          <ul>
-            <li><a href="#">nav 1</a></li>
-            <li><a href="#">nav 2</a></li>
-            <li><a href="#">nav 3</a></li>
-          </ul>
+          <!-- <ul> -->
+            <!-- <li><a href="#">nav 1</a></li> -->
+            <!-- <li><a href="#">nav 2</a></li> -->
+            <!-- <li><a href="#">nav 3</a></li> -->
+            <div id="list_section">
+                <h2 id="header">To-do list</h2>
+                <ul>
+                  <li class="item">Buy tickets for AVENGERS ENDGAME!!</li>
+                </ul>
+                <div id="newItemButton"><button href="#">new item</button></div> 
+                <form id="newItemForm">
+                  <input type="text" id="itemField" placeholder="Item" />
+                  <input type="submit" id="add" value="add" />
+                </form>
+              </div>
+              <script src="../java_script/jquery-3.3.1.js"></script>
+              <script src="../java_script/example.js"></script> 
+          <!-- </ul> -->
         </nav>
         <main>
           <h1>Main Title</h1>
-          <p>Main content</p>
         </main>
         <aside> Calculator w/ flex box
           <input id="display" type="textbox" >
@@ -89,6 +101,7 @@
                 <span>Fri </span>
                 <span>Sat </span>
 
+                <div>  </div>
                 <div>1 </div>
                 <div>2 </div>
                 <div>3 </div>
@@ -119,7 +132,11 @@
                 <div>28</div>
                 <div>29</div>
                 <div>30</div>
-              </div>
-              </div>
+                <div>  </div>
+                <div>  </div>
+                <div>  </div>
+                <div>  </div>
+            </div>
+          </div>
 </body>
 </html>

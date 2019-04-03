@@ -1,24 +1,25 @@
 header {background-color: lightblue;
-    grid-area: header;
-  }
-  main {background-color: pink;
-    min-height: calc(100vh - 54px);
-    grid-area: main;
-  }
-  nav {background-color: lightsalmon;
-    grid-area: nav;
-  }
-  aside {background-color: lightgreen;
-    grid-area: aside;
+  grid-area: header;
+}
+main {background-color: pink;
+  min-height: calc(100vh - 54px);
+  grid-area: main;
+}
+nav {background-color: lightsalmon;
+  grid-area: nav;
+}
+aside {background-color: lightgreen;
+  grid-area: aside;
+}
 
-  }
-  .banner {background-color: lavender;
-    grid-area: banner;
-  }
-  footer {background-color: khaki;
-    color:blue;
-    grid-area: footer;
-  }
+
+.banner {background-color: lavender;
+  grid-area: banner;
+}
+footer {background-color: khaki;
+  color:blue;
+  grid-area: footer;
+}
   /*.container {
     display: grid; / Using the grid /
     grid-template-areas: / Notice how I've stacked my areas, just like they look on the page! /
@@ -161,5 +162,58 @@ border-bottom: 1px solid ;
 
 .bday:hover{
 border: 1px dotted gold;
+}
+/* added ul and li */
+ul {
+  padding: 0;
+}
+li {
+  background-color: #fff;
+  color: #000;
+  font-size: 15px;
+  list-style-type: none;
+  width: 50%;
+  margin: 0px auto;
+  border-radius: 3px;
+  border: 1px solid #000;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+p {
+  background-color: #fff;
+  color: #666;
+  padding: 10px;
+  display: inline-block;
+  margin: 20px auto 20px auto;
+  width: 80%;
+  border-radius: 5px;
+  text-align: center;
+}
+#list_section {
+  text-align: center;
+}
+.item {
+  background-color: #fff;
+  color: #000;
+}
 
+input[type='text'] {
+  font-size: 12px;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+input[type='submit'] {
+  background-color: #fff;
+  color: #000;
+  border-radius: 8px;
+  border: none;
+  padding: 5px;
+}
+#newItemButton {
+  display: none;
+}
+#itemField {
+  margin-top: 60px;
+  width: 45%;
 }

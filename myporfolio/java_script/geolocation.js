@@ -6,8 +6,8 @@
     }
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(onPositionReceived, locationNotReceived, {timeout:5});
-    
-} () );
+    } () ) 
+}
 
 ////// just a COPY AND PASTE comparison for now
 //////(var myLocation = document.getElementById("my-coordinates")
