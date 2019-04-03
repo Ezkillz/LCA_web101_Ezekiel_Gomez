@@ -19,7 +19,6 @@ h1{
 .displayer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid
 }
 .box{
     width:  200px;

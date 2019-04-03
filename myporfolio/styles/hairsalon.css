@@ -1,9 +1,16 @@
 body{
-    background: 
+    background: lightgray;
 }
 .image1{
     width:400px;
-    height: 250px;
+    height: 100px;
+}
+h1{
+    text-align: right;
+    font-size: 60px;
+    margin-left: 2vw;
+    width: 400px;
+    height: 100px;
 }
 .header{
     background:yellowgreen;
@@ -11,8 +18,52 @@ body{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    height: 100px;
 }
 .main{
 
+}
+.link{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-position-x: 20vw ;
+}
+.has-border{
+    width: 1fr;
+    height: 1vw;
+    padding: 20px;
+    border: gold solid 2px;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right:10px;
+}
+.disgrid{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
 
+}
+.a_tag{
+    border: red solid 1px;
+    width:350px;
+    height:300px;
+}
+#im1 {background: url(../images/hair_salon/blue-hair.jpg)          ;background-size:cover; background-position:center}
+#im2 {background: url(../images/hair_salon/grey-hair-style.jpg)    ;background-size:cover; background-position:center}
+#im3 {background: url(../images/hair_salon/lady-back-design.jpg)   ;background-size:cover; background-position:center}
+#im4 {background: url(../images/hair_salon/cool-haircut-design.jpg);background-size:cover; background-position:center}
+#im5 {background: url(../images/hair_salon/beard-design.jpg)       ;background-size:cover; background-position:center}
+#im6 {background: url(../images/hair_salon/braided-hair.jpg)       ;background-size:cover; background-position:center}
+#im7 {background: url(../images/hair_salon/rose-style.jpg)         ;background-size:cover; background-position:top;  }
+#im8 {background: url(../images/hair_salon/)                       ;background-size:cover; background-position:center}
+
+@media(max-width:576px){
+    .disgrid{ 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .a_tag{
+        width:300px;
+    }
 }
